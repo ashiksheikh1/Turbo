@@ -1,0 +1,28 @@
+.order-btn{
+  padding: 10px 50px;
+  margin-left: 20px;
+  border-width: 2px;
+  border-radius: 4px;
+  border-image: linear-gradient(to right, #0496FE, #FD1F58) 1;
+}
+.order-btn:hover{
+  background-image: linear-gradient(to right top, #0295fe, #8f7df3, #d05cd0, #f53399, #fd1f58);
+  border: 2px solid transparent;
+}
+@media (max-width:700px){
+  .navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff
+  }
+  .navbar-toggler-icon{
+    background-color: #e2e9ec;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}

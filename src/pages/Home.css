@@ -1,0 +1,194 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;}
+img{
+    width: 100%;
+}
+.hero{
+    background-image: url(../../public/assets/images/home/Фон.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px 100px;
+    background-color: #111;
+    overflow: hidden;
+}
+.section-box{
+    position: relative;
+    overflow: hidden;
+}
+.section-content{
+    padding-bottom: 60px;
+}
+.section-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    color: #F8F8F8;
+}
+.section-deccription{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #F8F8F8;
+}
+.time-box{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0295FE 2.7%, #FD1F58 100%);
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.time-box p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+.time-box h4{
+    margin: 0px;
+    padding: 0px;
+}
+.box-image{
+    background: #04030A;
+    border: 1px solid #676767;    
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+.box-image:hover{
+    background: linear-gradient(#04030A, #04030A) padding-box, conic-gradient(from 20deg at 50% 50%,#e92a67 0deg,#a853ba 112.5deg,#2a8af6 228.75deg,rgba(42,138,246,0) 360deg);
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 8px;
+}
+.top-btn{
+    display: flex;
+    justify-content: center;
+}
+.top-btn a{
+    background: #13161D;
+    border: 1px solid #555555;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    width: 200px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #F8F8F8;
+    transition: .3s all;
+}
+.top-btn a:hover{
+    color: #bdb8b8;
+}
+.box--image-l{
+    /* background: url('photo_2022-11-28 21.33.png'); */
+    filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.35));
+}
+.box--image-r{   
+    filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.35));
+}
+.box-btn{
+    padding: 12px 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #04030A;
+}
+
+/* Contact form */
+.contact-form{
+    background: #04030A;
+    border: 1px solid #555555;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 80px ;
+    margin-bottom: 300px;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+.form-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px; 
+    color: #ffffff;
+    text-align: center;
+}
+.input-f{
+    background: #13161D;
+    border: 1px solid #676767;
+    border-radius: 4px;
+
+}
+.form-control:focus, .btn:focus, .btn:active{
+    box-shadow: none;
+}
+
+@media (max-width:700px){
+    .section-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .section-deccription {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.03em;
+    }
+    .section-box .container{
+        margin-top: 250px;
+    }
+    .hero{
+        padding: 0px;
+    }
+    .time-box{
+        right: 22%;
+        width: 200px;
+        height: 200px;
+        top: 30px;
+    }
+    .box-image{
+        margin-bottom: 20px;
+    }
+    .box--image-l, .box--image-r{
+        max-width: 200px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .box--image-l img, .box--image-r img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form{
+        margin-top: 20px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+}
